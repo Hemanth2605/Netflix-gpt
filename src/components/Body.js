@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Login from './Login';
 import Browse from './Browse';
@@ -15,6 +15,7 @@ const Body = () => {
             element: <Browse />
         }
     ])
+
   return (
     <div>
         <RouterProvider router={appRouter} />
@@ -22,4 +23,4 @@ const Body = () => {
   )
 }
 
-export default Body
+export default Body;
